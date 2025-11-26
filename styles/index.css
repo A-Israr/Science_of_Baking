@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+}
+  .hero-image {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+  }
+
+.hero {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+:root {
+  --accent: rgba(217, 136, 185, 0.818);
+  --nav-text: rgba(0,0,0,0.5);
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: rgba(79, 3, 75, 0.5);
+  border-bottom: 1px solid rgba(0,0,0,0);
+  z-index: 20;
+}
+
+.navbar nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: var(--nav-text);
+  font-weight: 600;
+}
+
+.brand {
+  color: var(--nav-text);
+}
+
+@media (max-width: 600px) {
+  .hero-image {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(79, 3, 75, 0.5);
+    color: rgba(77, 4, 61, 1);
+    text-align: center;
+    font-style: italic;
+}
+
+.posts-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-top: 20px;
+}
+
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    background: white;
+}
+
+.post-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.post-card h3 {
+    padding: 10px;
+    color: rgba(217, 136, 185, 0.818);
+
+}
+
+.post-card p {
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.read-more {
+    display: inline-block;
+    margin: 10px;
+    color: rgba(13, 69, 209, 0.463);
+    font-weight: bold;
+}
+
+.about {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgba(77, 4, 61, 1);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-preview {
+    padding: 40px 20px;
+    background: rgba(217, 136, 185, 0.818);
+    text-align: center;
+}
+
+.about-preview h2 {
+    margin-bottom: 15px;
+    color: rgba(77, 4, 61, 1);
+}
+
+.about-preview p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(79, 3, 75, 0.5);
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+}
